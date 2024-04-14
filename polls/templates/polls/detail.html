@@ -1,9 +1,9 @@
-<h1>{{ question.question_text }}</h1>
+<!-- <h1>{{ question.question_text }}</h1>
 <ul>
   {% for choice in question.choice_set.all %}
   <li>{{ choice.choice_text }}</li>
   {% endfor %}
-</ul>
+</ul> -->
 
 <form action="{% url 'polls:vote' question.id %}" method="post">
   <!-- 自サイト内を URL に指定した POST フォームには全て、 {% csrf_token %} テンプレートタグを使うべき -->
