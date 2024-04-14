@@ -19,8 +19,7 @@
       id="choice{{ forloop.counter}}"
       value="{{ choice.id }}"
     />
-    <label for="choice{{ forloop.counter }}"
-      >{{ <choice class="choice_text"></choice> }}</label
+    <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label
     ><br />
     {% endfor %}
   </fieldset>
