@@ -17,7 +17,7 @@ def index(request):
 
 
 def detail(request, question_id):
-    return HttpResponse("You7re looking at quetion %s." % question_id)
+    return HttpResponse("You're looking at quetion %s." % question_id)
 
 
 def results(request, question_id):
