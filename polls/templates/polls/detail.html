@@ -6,6 +6,7 @@
 </ul>
 
 <form action="{% url 'polls:vote' question.id %}" method="post">
+  <!-- 自サイト内を URL に指定した POST フォームには全て、 {% csrf_token %} テンプレートタグを使うべき -->
   {% csrf_token %}
   <fieldset>
     <legend><h1>{{ question.question_text }}</h1></legend>
