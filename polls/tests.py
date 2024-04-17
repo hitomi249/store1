@@ -32,4 +32,3 @@ class QuestionModelTests(TestCase):
         self.assertIs(recent_question.was_published_recently(), True)
 
 
-# Create your tests here.
