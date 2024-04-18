@@ -1,8 +1,14 @@
 {% load static %}
-
-<link rel="stylesheet" href="{% static 'polls/style.css' %}" />
-
-{% if latest_question_list %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Store1</title>
+  <link rel="stylesheet" href="{% static 'polls/style.css' %}" />
+</head>
+<body>
+  {% if latest_question_list %}
 <ul>
   {% for question in latest_question_list %}
   <li>
@@ -13,3 +19,6 @@
 {% else %}
 <p>No polls are available.</p>
 {% endif %}
+</body>
+</html>
+
