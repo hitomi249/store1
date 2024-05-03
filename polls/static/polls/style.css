@@ -1,0 +1,12 @@
+body {
+  background: white url("images/background.png") no-repeat;
+}
+
+li a {
+  color: green;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
